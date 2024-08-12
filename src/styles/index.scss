@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.app {
+	height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}

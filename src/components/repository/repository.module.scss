@@ -1,0 +1,78 @@
+.repository,
+.error,
+.empty,
+.loading,
+.start {
+	height: 100%;
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.start,
+.loading,
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.start,
+.error P {
+	font-size: 14px;
+	color: #4f4f4f;
+}
+
+.loader {
+	color: #4f4f4f;
+	animation: loader 0.5s infinite linear;
+}
+
+.repository {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.title {
+	font-size: 32px;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.language {
+	font-size: 13px;
+	display: flex;
+	color: #fff;
+	background-color: #2196f3;
+	padding: 10px 15px;
+	border-radius: 40px;
+}
+
+.stargazers {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.stargazers p {
+	margin-top: 3px;
+	color: rgba(0, 0, 0, 87%);
+}
+
+.license {
+	color: rgba(0, 0, 0, 87%);
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

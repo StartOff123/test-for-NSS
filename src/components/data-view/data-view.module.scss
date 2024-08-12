@@ -1,0 +1,36 @@
+.welcome,
+.empty,
+.error,
+.loading {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome,
+.empty,
+.error p {
+	font-size: 46px;
+	color: #4f4f4f;
+}
+
+.loader {
+	color: #4f4f4f;
+	animation: loader 0.5s infinite linear;
+}
+
+.data_view {
+    height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 480px;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,25 @@
+.languages {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.language {
+	padding: 7px 15px;
+    border-radius: 40px;
+	background-color: rgba(0, 0, 0, 8%);
+	color: #000;
+}
+
+.loader {
+	animation: loader 0.5s infinite linear;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
